@@ -38,7 +38,7 @@ tasks:
       - when: <% failed() %>
         do:
           - xyz
-  xyz:
+  abc:
     action: azure_vm.send_email
     input:
       account: <% ctx().account %>
@@ -46,7 +46,7 @@ tasks:
       email_to: <% ctx().from123 %>
       message: <% ctx().message %>
       subject: <% ctx().subject %>         
-  abc:
+  xyz:
     action: core.local
     input:
       cmd: echo hi     
