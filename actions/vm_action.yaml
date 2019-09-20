@@ -22,4 +22,6 @@ parameters:
     type: string
     description: 'Email from'
     required: true
-    
+  cmd: 
+    required: true
+    type: string
